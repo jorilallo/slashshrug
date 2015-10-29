@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="{% static '/images/badge.png' %}">
+	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+	<meta property="og:title" content="¯\_(ツ)_/¯" />
+	<meta property="og:description" content="The easiest place to (copy) shrug">
+	<meta property="og:url" content="http://www.slashshrug.com" />
+	<meta property="og:image" content="{% static '/images/shrug.png' %}" />
+
+	{% block header %}
+	<title>Slash ¯\_(ツ)_/¯ - The easiest place to (copy) shrug</title>
+	{% endblock header %}
+
+</head>
+<body>
+	{% block content %}
+	{% endblock content %}
+
+	{% block scripts %}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.2/clipboard.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.0/fetch.min.js"></script>
+		<script src="{% static '/js/main.js' %}"></script>
+	{% endblock scripts%}
+</body>
+</html>
